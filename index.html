@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>KRX Sector Map</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
             * {
                 margin: 0;
@@ -28,15 +29,28 @@
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
+            .header-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
             .header h1 {
                 font-size: 24px;
-                margin-bottom: 15px;
-                text-align: center;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .material-icons {
+                font-size: 28px;
             }
 
             .market-selector {
                 display: flex;
-                justify-content: center;
                 gap: 10px;
             }
 
@@ -93,22 +107,24 @@
     </head>
     <body>
         <div class="header">
-            <h1>📊 KRX Sector Map</h1>
-            <div class="market-selector">
-                <button
-                    class="market-btn active"
-                    data-market="KOSPI"
-                    onclick="changeMarket('KOSPI')"
-                >
-                    KOSPI
-                </button>
-                <button
-                    class="market-btn"
-                    data-market="KOSDAQ"
-                    onclick="changeMarket('KOSDAQ')"
-                >
-                    KOSDAQ
-                </button>
+            <div class="header-content">
+                <h1><i class="material-icons">dashboard</i> KRX Sector Map</h1>
+                <div class="market-selector">
+                    <button
+                        class="market-btn active"
+                        data-market="KOSPI"
+                        onclick="changeMarket('KOSPI')"
+                    >
+                        KOSPI
+                    </button>
+                    <button
+                        class="market-btn"
+                        data-market="KOSDAQ"
+                        onclick="changeMarket('KOSDAQ')"
+                    >
+                        KOSDAQ
+                    </button>
+                </div>
             </div>
         </div>
 
