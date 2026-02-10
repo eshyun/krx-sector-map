@@ -1,7 +1,7 @@
 # KRX Sector Map
 
 KRX(한국거래소) 섹터별 시장 정보를 시각화한 인터랙티브 대시보드입니다. KOSPI와 KOSDAQ 시장의 섹터별 데이터를 트리맵 형태로 제공합니다.
-이 Repository는 [Netlify KRX Sector Map](https://krx-sectormap.netlify.app/)에서 개인적으로 보기 위해 만든 페이지입니다.
+이 Repository는 [KRX Sector Map](https://krx-sector-map.pages.dev/)에서 개인적으로 보기 위해 만든 페이지입니다.
 
 ## 주요 기능
 
